@@ -1,0 +1,76 @@
+
+🛠️ Step 1: Create a GitHub Account
+- Go to https://github.com.
+- Click Sign up.
+- Enter your email, username, and password.
+- Verify your email address.
+- Log in to your new GitHub account.
+
+📂 Step 2: Install Git on Your Laptop
+- Windows: Download Git from https://git-scm.com/downloads and install.
+- Mac/Linux: Usually preinstalled, but you can install via package manager (brew install git or sudo apt install git).
+Check installation:
+git --version
+
+
+Step 3: Configure Git
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+
+
+📁 Step 4: Create a Repository on GitHub
+- Log in to GitHub.
+- Click the + icon (top right) → New repository.
+- Enter a repository name (e.g., my-first-repo).
+- Choose Public or Private.
+- Click Create repository.
+
+🖥️ Step 5: Create a Folder Locally
+On your laptop:
+mkdir my-first-repo
+cd my-first-repo
+
+
+Initialize Git:
+git init
+
+
+
+📜 Step 6: Add Code Files
+Create a file:
+echo "Hello GitHub!" > hello.txt
+
+
+
+📌 Step 7: Connect Local Repo to GitHub
+Copy the repository URL from GitHub (HTTPS or SSH). Example:
+git remote add origin https://github.com/username/my-first-repo.git
+
+
+
+📤 Step 8: Push Code to GitHub
+git add .
+git commit -m "First commit"
+git push -u origin main
+
+
+👉 If your repo uses master instead of main, replace main with master.
+
+✅ Summary Workflow
+- Create GitHub account
+- Install Git locally
+- Configure Git username/email
+- Create repo on GitHub
+- Create folder locally & git init
+- Add files → git add → git commit
+- Connect remote → git remote add origin
+- Push code → git push
+
+echo "# Python_code" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin 
+git push -u origin main
+
